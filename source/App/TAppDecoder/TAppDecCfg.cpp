@@ -60,7 +60,9 @@ namespace po = df::program_options_lite;
  */
 Bool TAppDecCfg::parseCfg( Int argc, Char* argv[] )
 {
-  Bool do_help = false;
+  Bool do_help       = false;
+  m_pchBitstreamFile = NULL;
+  m_pchReconFile     = NULL;
   string cfg_BitstreamFile;
   string cfg_ReconFile;
   string cfg_TargetDecLayerIdSetFile;
